@@ -24,23 +24,23 @@ namespace SnakeAndLadder
             Console.WriteLine("Number of option " + option);
             Console.Write("\n");
             
-            int Player_position = 0;
-            int No_Play = 0;
+            int player_position = 0;
+            int no_Play = 0;
 
             if (option == 1)        //Moves ahead
             {
-                Player_position = Player_position + dice_number;
-                Console.WriteLine("Player position moves ahead by the number on dice : " + Player_position);
+                player_position = player_position + dice_number;
+                Console.WriteLine("Player position moves ahead by the number on dice : " + player_position);
             }
             else if (option == 2)   //Moves behind
             {
-                Player_position = Player_position - dice_number;
-                Console.WriteLine("Player position moves behind by the number on dice : " + Player_position);
+                player_position = player_position - dice_number;
+                Console.WriteLine("Player position moves behind by the number on dice : " + player_position);
             }
             else                    //No play
             {
-                Player_position = Player_position + No_Play;
-                Console.WriteLine("Player position remain same : " + Player_position);
+                player_position = player_position + no_Play;
+                Console.WriteLine("Player position remain same : " + player_position);
             }
             Console.ReadLine();
         }
